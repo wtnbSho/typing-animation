@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'DotGothic16', sans-serif;
+}
+
+.main {
+	height: 100vh;
+	background: linear-gradient(90deg, rgba(255,174,248,1) 0%, rgba(230,140,140,1) 67%);
+	color: white;
+	padding: 0 8.5%;
+	position: relative;
+
+	& nav {
+		display: flex;
+		align-items: center;
+		padding: 30px 0 10px;
+
+		ul {
+			flex: 1;
+			text-align: right;
+
+			li {
+				list-style: none;
+				display: inline-block;
+				margin: 10px 30px;
+				a {
+				color: white;
+				text-decoration: none;
+				font-size: 15px;
+				font-weight: bold;
+				transition: all .2s;
+
+				&:hover {
+					color: rgb(205, 25, 67);
+				}
+				}
+			}
+		}
+	}
+}
+
+.menu-icon {
+	width: 35px;
+	cursor: pointer;
+}
+
+.main-title {
+	margin-top: 15%;
+	font-size: 17px;
+	letter-spacing: 1px;
+	line-height: 40px;
+	position: relative;
+	z-index: 10;
+
+	h1 {
+		font-size: 75px;
+		line-height: 160px;
+	}
+
+	a {
+		text-decoration: none;
+		color: rgb(205, 25, 67);
+		display: inline-block;
+		margin-top: 30px;
+		border: 2px solid rgb(205, 25, 67);
+		padding: 10px 30px;
+		border-radius: 6px;
+	}
+
+	.btn {
+		background-color: rgb(205, 25, 67);
+		color: rgba(255,174,248,1);
+		margin-left: 20px;
+	}
+}
+
+
+.san {
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	object-fit: cover;
+
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+}
